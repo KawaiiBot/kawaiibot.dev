@@ -44,6 +44,14 @@ p { color: rgba(255, 255, 255, 0.6); }
   filter: blur(5px) brightness(50%);
 }
 
+.partners_background {
+  background: url('../images/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .information {
   width: 95%; margin: 2rem;
 }
@@ -129,12 +137,18 @@ p { color: rgba(255, 255, 255, 0.6); }
 /* Partner stuff */
 .partners_title {
   text-align: center;
-  margin: 0.4em;
-  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
 }
 
-.partners_title * { text-align: center; }
+.partners_title * {
+  text-align: center;
+  text-shadow: 0 0 15px black;
+}
 .partners_title h1 { font-size: 3em; }
+.partners_title a { color: lightgreen; }
 
 #partners {
   text-align: center;
@@ -142,12 +156,18 @@ p { color: rgba(255, 255, 255, 0.6); }
   margin: 0;
 }
 
+#partners .flex-item {
+  width: calc(33% - 40px);
+}
+
 #partners .flex-item .items {
-  background: rgba(100, 100, 100, 0.5);
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 1em;
   margin-left: 2em;
   margin-right: 2em;
   padding: 1em;
 }
+
 
 #partners img {
   width: 7em;
@@ -155,9 +175,12 @@ p { color: rgba(255, 255, 255, 0.6); }
   border-radius: 100%;
 }
 
+#partners a, #partners p { font-size: 1em; }
+
 #partners p {
   margin-top: 1em;
   text-align: left;
+  color: #fff;
   word-wrap: break-word;
 }
 
@@ -177,6 +200,10 @@ footer {
 }
 
 /* Responsive */
+@media screen and (max-width: 1400px) {
+  #partners .flex-item { width: calc(50% - 40px); }
+}
+
 @media screen and (max-width: 700px) {
   .flex-item { width: 100%; }
   .information { width: 100%; margin: 0.1rem; }
