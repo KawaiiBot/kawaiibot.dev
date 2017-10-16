@@ -148,7 +148,7 @@ p { color: rgba(255, 255, 255, 0.6); }
   text-shadow: 0 0 15px black;
 }
 .partners_title h1 { font-size: 3em; }
-.partners_title a { color: lightgreen; }
+.partners_title .partner_link { color: lightgreen; }
 
 #partners {
   text-align: center;
