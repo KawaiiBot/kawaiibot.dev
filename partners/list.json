@@ -4,8 +4,14 @@
     "logo": "https://i.alexflipnote.xyz/0d3e6c.jpg",
     "desc": "this is a desc",
     "links": [
-      "example.com",
-      "example2.com"
+      {
+        "url": "https://example.com",
+        "name": "Example"
+      },
+      {
+        "url": "https://example.com",
+        "name": "Example 2"
+      }
     ]
   },
   {
@@ -13,7 +19,10 @@
     "logo": "https://i.alexflipnote.xyz/0d3e6c.jpg",
     "desc": "this is a desc",
     "links": [
-      "example.com"
+      {
+        "url": "https://example.com",
+        "name": "Example"
+      }
     ]
   },
   {
@@ -21,8 +30,14 @@
     "logo": "https://i.alexflipnote.xyz/0d3e6c.jpg",
     "desc": "this is a desc",
     "links": [
-      "example.com",
-      "example2.com"
+      {
+        "url": "https://example.com",
+        "name": "Example"
+      },
+      {
+        "url": "https://example.com",
+        "name": "Example 2"
+      }
     ]
   }
 ]
