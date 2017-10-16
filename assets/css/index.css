@@ -55,6 +55,8 @@ p { color: rgba(255, 255, 255, 0.6); }
   transform: translate(-50%, -50%);
 }
 
+.absolute { position: absolute; }
+
 .me {
   z-index: 10;
   width: 100%;
