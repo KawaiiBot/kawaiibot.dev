@@ -127,22 +127,42 @@ p { color: rgba(255, 255, 255, 0.6); }
 .subterm, .subterm p, .subterm b { font-size: 1em; }
 
 /* Partner stuff */
+.partners_title {
+  text-align: center;
+  margin: 0.4em;
+  margin-top: 1em;
+}
+
+.partners_title * { text-align: center; }
+.partners_title h1 { font-size: 3em; }
+
 #partners {
   text-align: center;
   width: 100%;
   margin: 0;
 }
 
+#partners .flex-item .items {
+  background: rgba(100, 100, 100, 0.5);
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 1em;
+}
+
 #partners img {
   width: 7em;
+  margin-bottom: 1em;
   border-radius: 100%;
+}
+
+#partners p {
+  margin-top: 1em;
+  text-align: left;
+  word-wrap: break-word;
 }
 
 #partners .list a {
   display: table;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 }
 
 /* Bottom */
@@ -158,6 +178,7 @@ footer {
 
 /* Responsive */
 @media screen and (max-width: 700px) {
+  .flex-item { width: 100%; }
   .information { width: 100%; margin: 0.1rem; }
   b, a, p { font-size: 15px; }
   h2 { font-size: 30px; }
