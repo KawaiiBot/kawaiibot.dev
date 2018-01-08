@@ -1,0 +1,17 @@
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+<!-- Meta Data -->
+<meta name="theme-color" content="{% if page.themecolour %}{{ page.themecolour }}{% else %}{{ site.themecolour }}{% endif %}">
+<meta content="{{ site.url }}/assets/images/kawaii.png" property="og:image" />
+<meta content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" property="og:title" />
+<meta content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" property="og:description" />
+<meta name="revisit-after" content="2 days">
+<meta name="keywords" content="KawaiiBot, Discord, partner, AlexFlipnote{% if page.keywords %}, {{ page.keywords }}{% else %}{% endif %}">
+
+<!-- CSS/JS stuff -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+<script src="{{ site.url }}/assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+<link href="{{ site.url }}/assets/css/main.css" type="text/css" rel="stylesheet">

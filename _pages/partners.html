@@ -1,0 +1,38 @@
+---
+permalink: "/partners/"
+
+description: Partners of KawaiiBot
+---
+
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="partners_background">
+      <div class="background-partners" style="display: block;">
+        <h1><i class="twa twa-thumbsup"></i> Partners:</h1>
+        <a class="btn discord" href="https://discord.gg/wGwgWJW" target="_blank">Discord server</a>
+        <a class="btn green" href="/">Back to home</a>
+      </div>
+
+      <section class="container bot">
+        <div class="rowcard">
+          {% for member in site.data.partners %}
+          <div class="card">
+            <img draggable="false" src="{{ member.logo }}">
+            <h1 class="name">{{ member.name }}</h1>
+            <div class="list">
+              {% for link in member.links %}
+              <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+              {% endfor %}
+            </div>
+            <p class="text">{{ member.desc }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>
