@@ -1,0 +1,186 @@
+html {
+  margin: 0; }
+
+body {
+  background: #181818; }
+
+b, a {
+  color: #14bae4; }
+
+b, p, a {
+  font-size: 1.1em; }
+
+a {
+  text-decoration: none; }
+
+p {
+  color: rgba(255, 255, 255, 0.6); }
+
+a, html, body, h1, h2, h3, h4, p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  margin: 0; }
+
+.white-text {
+  color: #fff !important; }
+
+.background {
+  background: url("../images/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px) brightness(50%);
+  height: 100%;
+  width: 100%; }
+
+.center-object {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; }
+  .center-object .me {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 100%;
+    z-index: 10; }
+    .center-object .me .image-title {
+      border-radius: 100%;
+      width: 9em; }
+    .center-object .me .title {
+      filter: drop-shadow(6px 6px 0 rgba(0, 0, 0, 0.4));
+      font-size: 3rem;
+      letter-spacing: 1px;
+      margin: .25em; }
+    .center-object .me .undertitle {
+      filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.4));
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      margin: 0;
+      text-align: center; }
+
+.links {
+  display: inline-block;
+  margin-top: 1em;
+  text-align: center; }
+
+.buttons {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+.btn {
+  animation: button-enter 750ms ease-in-out forwards;
+  background-color: transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 38px;
+  line-height: 38px;
+  margin: .5em;
+  opacity: 0;
+  padding: 0 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 350ms ease;
+  white-space: nowrap; }
+  .btn:nth-child(1) {
+    animation-delay: 0.25s; }
+  .btn:nth-child(2) {
+    animation-delay: 0.5s; }
+  .btn:nth-child(3) {
+    animation-delay: 0.75s; }
+  .btn:nth-child(4) {
+    animation-delay: 1s; }
+  .btn:nth-child(5) {
+    animation-delay: 1.25s; }
+  .btn:nth-child(6) {
+    animation-delay: 1.5s; }
+  .btn:nth-child(7) {
+    animation-delay: 1.75s; }
+  .btn:nth-child(8) {
+    animation-delay: 2s; }
+  .btn:nth-child(9) {
+    animation-delay: 2.25s; }
+  .btn:nth-child(10) {
+    animation-delay: 2.5s; }
+  .btn.discord {
+    background-color: #7289da;
+    filter: drop-shadow(5px 5px 0 rgba(114, 137, 218, 0.6)); }
+    .btn.discord:hover {
+      filter: drop-shadow(5px 5px 0 rgba(114, 137, 218, 0.6)) brightness(50%); }
+  .btn.twitter {
+    background-color: #1da1f2;
+    filter: drop-shadow(5px 5px 0 rgba(29, 161, 242, 0.6)); }
+    .btn.twitter:hover {
+      filter: drop-shadow(5px 5px 0 rgba(29, 161, 242, 0.6)) brightness(50%); }
+  .btn.green {
+    background-color: #2ecc71;
+    filter: drop-shadow(5px 5px 0 rgba(46, 204, 113, 0.6)); }
+    .btn.green:hover {
+      filter: drop-shadow(5px 5px 0 rgba(46, 204, 113, 0.6)) brightness(50%); }
+  .btn.patreon {
+    background-color: #f36e57;
+    filter: drop-shadow(5px 5px 0 rgba(243, 110, 87, 0.6)); }
+    .btn.patreon:hover {
+      filter: drop-shadow(5px 5px 0 rgba(243, 110, 87, 0.6)) brightness(50%); }
+  .btn:hover {
+    color: #fff;
+    transition: all 350ms ease; }
+
+@keyframes button-enter {
+  from {
+    opacity: 0;
+    transform: translateY(2em); }
+  70% {
+    transform: translateY(-0.3em); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+@media (max-width: 500px) {
+  .center-object .me .image-title {
+    width: 9em; }
+  .center-object .me .title {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin: -.3em 0; }
+  .center-object .me .undertitle {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-left: .25em; }
+
+  .buttons {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .buttons .btn {
+      align-items: center;
+      display: flex;
+      font-size: 18px;
+      justify-content: center;
+      line-height: 20px;
+      padding: 25px 0;
+      text-align: center;
+      white-space: pre-line;
+      width: calc(45% - 30px); }
+    .buttons .btn, .buttons .btn:hover {
+      filter: none; } }
+@media (max-width: 350px) {
+  .center-object .me .title {
+    margin: 0 0 -.1em; } }
+
+/*# sourceMappingURL=index.css.map */

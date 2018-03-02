@@ -1,5 +1,13 @@
-@import '../assets/animation';
-@import '../assets/browser';
+@mixin dropshadow($colour) {
+  $shadow: drop-shadow(5px 5px 0 rgba($colour, .6));
+
+  background-color: $colour;
+  filter: $shadow;
+
+  &:hover {
+    filter: $shadow brightness(50%);
+  }
+}
 
 .buttons {
   align-items: center;
@@ -15,8 +23,7 @@
     }
   }
 
-  @include animation('button-enter 750ms ease-in-out forwards');
-  @include transition('all 350ms ease');
+  animation: button-enter 750ms ease-in-out forwards;
   background-color: transparent;
   border-radius: 5px;
   box-sizing: border-box;
@@ -33,18 +40,16 @@
   padding: 0 30px;
   text-align: center;
   text-decoration: none;
+  transition: all 350ms ease;
   white-space: nowrap;
 
   &.discord { @include dropshadow(#7289da); }
   &.twitter { @include dropshadow(#1da1f2); }
-  &.github { @include dropshadow(#24292e); }
-  &.steam { @include dropshadow(#000); }
-  &.email { @include dropshadow(#9b59b6); }
   &.green { @include dropshadow(#2ecc71); }
   &.patreon { @include dropshadow(#f36e57); }
 
   &:hover {
-    @include transition('all 350ms ease');
     color: #fff;
+    transition: all 350ms ease;
   }
 }
