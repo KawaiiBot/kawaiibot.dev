@@ -1,0 +1,37 @@
+- name: AlexFlipnote
+  title: Owner
+  avatar: https://avatars3.githubusercontent.com/u/19587382?s=460&v=4
+  links:
+    - url: https://github.com/AlexFlipnote
+      faicon: github
+    - url: https://twitter.com/AlexFlipnote
+      faicon: twitter
+      colour: 1DA1F2
+
+- name: Aurieh
+  title: Developer
+  avatar: https://avatars3.githubusercontent.com/u/18033264?s=460&v=4
+  links:
+    - url: https://github.com/aurieh
+      faicon: github
+
+- name: Kromatic
+  title: Developer
+  avatar: https://avatars2.githubusercontent.com/u/15076404?s=460&v=4
+  links:
+    - url: https://github.com/Devoxin
+      faicon: github
+
+- name: Yvan
+  title: Developer
+  avatar: https://avatars1.githubusercontent.com/u/24854702?s=460&v=4
+  links:
+    - url: https://github.com/lepeli
+      faicon: github
+
+- name: stupid cat
+  title: Developer
+  avatar: https://avatars3.githubusercontent.com/u/1059362?s=460&v=4
+  links:
+    - url: https://github.com/Ratismal
+      faicon: github

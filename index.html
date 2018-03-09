@@ -1,3 +1,7 @@
+---
+permalink: "/"
+---
+
 <html>
   <head>
     <!-- Main content to SEO -->
@@ -12,12 +16,17 @@
     <meta name="keywords" content="KawaiiBot, Discord, partner, AlexFlipnote">
     <meta name="theme-color" content="#f09de3">
 
-    <!-- Style stuff -->
+    <!-- Style and JS stuff -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
+
+    <script src="{{ site.url }}/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ site.url }}/assets/js/jarallax.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ site.url }}/assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </head>
   <body>
-    <div class="background"></div>
+    <div data-jarallax data-speed="0.25" class="jarallax background"></div>
     <div class="center-object">
       <section class="me">
         <img class="image-title" src="assets/images/kawaii.png">
@@ -31,5 +40,26 @@
         <a href="https://www.patreon.com/KawaiiBot" class="btn patreon" target="_blank">Donate</a>
       </div>
     </div>
+
+    <a href="#information"><div id="fade" class="arrow bounce"></div></a>
+    <section class="container" id="information">
+      <h1>Developers of KawaiiBot:</h1>
+      <div class="rowcard center-text">
+        {% for member in site.data.developers %}
+        <div class="card">
+          <div class="avatar"><img class="avatar" draggable="false" src="{{ member.avatar }}"></div>
+          <h2 class="name">{{ member.name }}</h2>
+          <span class="title">{{ member.title }}</span>
+          <div class="links">
+            {% for link in member.links %}
+            <a href="{{ link.url }}" target="_blank" {% if link.colour %}style="color: {{ link.colour }}"{% endif %}>
+              <i class="fab fa-{{ link.faicon }}"></i>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
   </body>
 </html>
