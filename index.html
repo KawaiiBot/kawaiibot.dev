@@ -53,7 +53,7 @@ permalink: "/"
           <div class="links">
             {% for link in member.links %}
             <a href="{{ link.url }}" target="_blank" {% if link.colour %}style="color: {{ link.colour }}"{% endif %}>
-              <i class="fab fa-{{ link.faicon }}"></i>
+              <i class="{{ link.faicon }}"></i>
             </a>
             {% endfor %}
           </div>

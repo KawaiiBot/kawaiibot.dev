@@ -3,9 +3,11 @@
   avatar: https://avatars3.githubusercontent.com/u/19587382?s=460&v=4
   links:
     - url: https://github.com/AlexFlipnote
-      faicon: github
+      faicon: fab fa-github
+    - url: https://keybase.io/alexflipnote
+      faicon: fas fa-key
     - url: https://twitter.com/AlexFlipnote
-      faicon: twitter
+      faicon: fab fa-twitter
       colour: 1DA1F2
 
 - name: Aurieh
@@ -13,25 +15,38 @@
   avatar: https://avatars3.githubusercontent.com/u/18033264?s=460&v=4
   links:
     - url: https://github.com/aurieh
-      faicon: github
+      faicon: fab fa-github
+    - url: https://keybase.io/aurieh
+      faicon: fas fa-key
+    - url: https://twitter.com/aurieeh
+      faicon: fab fa-twitter
+      colour: 1DA1F2
 
 - name: Kromatic
   title: Developer
   avatar: https://avatars2.githubusercontent.com/u/15076404?s=460&v=4
   links:
     - url: https://github.com/Devoxin
-      faicon: github
+      faicon: fab fa-github
+    - url: https://twitter.com/Kromatic__
+      faicon: fab fa-twitter
+      colour: 1DA1F2
 
 - name: Yvan
   title: Developer
   avatar: https://avatars1.githubusercontent.com/u/24854702?s=460&v=4
   links:
     - url: https://github.com/lepeli
-      faicon: github
+      faicon: fab fa-github
 
 - name: stupid cat
   title: Developer
   avatar: https://avatars3.githubusercontent.com/u/1059362?s=460&v=4
   links:
     - url: https://github.com/Ratismal
-      faicon: github
+      faicon: fab fa-github
+    - url: https://keybase.io/stupidcat
+      faicon: fas fa-key
+    - url: https://twitter.com/Ratismal
+      faicon: fab fa-twitter
+      colour: 1DA1F2
