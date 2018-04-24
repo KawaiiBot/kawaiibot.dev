@@ -22,16 +22,6 @@
       faicon: fab fa-twitter
       colour: 1DA1F2
 
-- name: Kromatic
-  title: Developer
-  avatar: https://avatars2.githubusercontent.com/u/15076404?s=460&v=4
-  links:
-    - url: https://github.com/Devoxin
-      faicon: fab fa-github
-    - url: https://twitter.com/Kromatic__
-      faicon: fab fa-twitter
-      colour: 1DA1F2
-
 - name: Yvan
   title: Developer
   avatar: https://avatars1.githubusercontent.com/u/24854702?s=460&v=4
