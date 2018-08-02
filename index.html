@@ -17,8 +17,7 @@ permalink: "/"
     <meta name="theme-color" content="#f09de3">
 
     <!-- Style and JS stuff -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
+    <link href="https://modesta.alexflipnote.xyz/css/modesta.min.css" type="text/css" rel="stylesheet">
 
     <script src="{{ site.url }}/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="{{ site.url }}/assets/js/jarallax.min.js" type="text/javascript" charset="utf-8"></script>
@@ -26,31 +25,34 @@ permalink: "/"
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </head>
   <body>
-    <div data-jarallax data-speed="0.25" class="jarallax background"></div>
-    <div class="center-object">
-      <section class="me">
-        <img class="image-title" src="assets/images/kawaii.png">
-        <h1 class="title">KawaiiBot</h1>
-        <p class="undertitle">A kawaii Discord bot that makes your server more fun!</p>
-      </section>
-      <div class="buttons">
-        <a href="https://discord.gg/wGwgWJW" class="btn discord" target="_blank">Discord</a>
-        <a href="https://discordapp.com/oauth2/authorize?client_id=195244341038546948&scope=bot" class="btn green" target="_blank">Invite me</a>
-        <a href="https://twitter.com/KawaiiDiscord" class="btn twitter" target="_blank">Twitter</a>
-        <a href="https://www.patreon.com/KawaiiBot" class="btn patreon" target="_blank">Donate</a>
+    <section class="fullscreen">
+      <div data-jarallax data-speed="0.25" class="jarallax background" style="background-image: url('assets/images/background.jpg')"></div>
+      <div class="center-object">
+        <section class="me">
+          <img class="image-title" src="assets/images/kawaii.png">
+          <h1 class="title">KawaiiBot</h1>
+          <p class="undertitle">A kawaii Discord bot that makes your server more fun!</p>
+        </section>
+        <div class="buttons">
+          <a href="https://discord.gg/wGwgWJW" class="btn discord" target="_blank">Discord</a>
+          <a href="https://discordapp.com/oauth2/authorize?client_id=195244341038546948&scope=bot" class="btn emerald" target="_blank">Invite me</a>
+          <a href="https://twitter.com/KawaiiDiscord" class="btn twitter" target="_blank">Twitter</a>
+          <a href="https://www.patreon.com/KawaiiBot" class="btn patreon" target="_blank">Donate</a>
+        </div>
       </div>
-    </div>
+    </section>
 
     <a href="#information"><div id="fade" class="arrow bounce"></div></a>
     <section class="container" id="information">
       <h1>Developers of KawaiiBot:</h1>
-      <div class="rowcard center-text">
+      <div class="card-container center-text">
         {% for member in site.data.developers %}
         <div class="card">
           <div class="avatar"><img class="avatar" draggable="false" src="{{ member.avatar }}"></div>
-          <h2 class="name">{{ member.name }}</h2>
-          <span class="title">{{ member.title }}</span>
-          <div class="links">
+          <h2 class="title">{{ member.name }}</h2>
+          <span class="description">{{ member.title }}</span>
+          <div class="footer">
+            <style>.card-container .card .footer a { color: #fff; font-size: 20px; }</style>
             {% for link in member.links %}
             <a href="{{ link.url }}" target="_blank" {% if link.colour %}style="color: {{ link.colour }}"{% endif %}>
               <i class="{{ link.faicon }}"></i>
