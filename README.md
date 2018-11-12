@@ -8,7 +8,6 @@ however we really want you to credit us if you're going to use this source <3
 - Google Fonts: Montserrat
 - Usage: Information about myself
 - Framework:
-  - [jarallax](https://github.com/nk-o/jarallax)
   - [skeleton](http://getskeleton.com/)
   - [smoothScroll](https://github.com/alicelieutier/smoothScroll)
 
