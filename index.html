@@ -17,7 +17,8 @@ permalink: "/"
     <meta name="theme-color" content="#f09de3">
 
     <!-- Style and JS stuff -->
-    <link href="https://modesta.alexflipnote.dev/css/modesta.css" type="text/css" rel="stylesheet">
+    <link href="{{ site.url }}/assets/css/modesta.css" type="text/css" rel="stylesheet">
+    <link href="{{ site.url }}/assets/css/custom.css" type="text/css" rel="stylesheet">
 
     <script src="{{ site.url }}/assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="{{ site.url }}/assets/js/main.js" type="text/javascript" charset="utf-8"></script>
@@ -42,26 +43,33 @@ permalink: "/"
       </div>
     </section>
 
-    <!--<a href="#information"><div id="fade" class="arrow bounce"></div></a>
-    <section class="container" id="information">
-      <h1>Developers of KawaiiBot:</h1>
-      <div class="card-container center-text">
+    <a href="#information"><div id="fade" class="arrow bounce">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.32 291.98" class="white-fill">
+        <path d="M466.5,15.5L466,15c-19.8-19.8-52-19.8-71.9,0L240.8,168.3L87.2,14.8C67.4-5,35.2-5,15.4,14.8l-0.5,0.5 C-5,35.2-5,67.4,14.8,87.2l186.6,186.6c0.9,1,1.8,2,2.7,3v0c3.8,3.8,8.1,6.9,12.7,9.3c17,9,38.1,7.7,53.9-3.9 c2.2-1.6,4.4-3.4,6.4-5.4L466.5,87.4C486.4,67.6,486.4,35.4,466.5,15.5z"/>
+      </svg>
+    </div></a>
+
+    <section class="container kawaii-developers" id="information">
+      <h3 class="kawaii-devs-title">Developers of KawaiiBot:</h3>
+      <div class="flex-grid">
         {% for member in site.data.developers %}
-        <div class="card">
-          <div class="avatar"><img class="avatar" draggable="false" src="{{ member.avatar }}"></div>
-          <h2 class="title">{{ member.name }}</h2>
-          <span class="description">{{ member.title }}</span>
-          <div class="footer">
-            <style>.card-container .card .footer a { color: #fff; font-size: 20px; }</style>
-            {% for link in member.links %}
-            <a href="{{ link.url }}" target="_blank" {% if link.colour %}style="color: {{ link.colour }}"{% endif %}>
-              <i class="{{ link.faicon }}"></i>
-            </a>
-            {% endfor %}
+          <div class="col-xs-6">
+            <div class="me unset">
+              <img class="image-title" src="{{ member.avatar }}">
+              <div class="unset">
+                <h1 class="title no-margin">{{ member.name }}</h1>
+                <p class="undertitle"><i>{{ member.title }}</i></p>
+                {% for link in member.links %}
+                  <a href="{{ link.url }}" target="_blank" {% if link.colour %}style="color: {{ link.colour }}"{% endif %}>
+                    <i class="{{ link.faicon }} dev-link-logo"></i>
+                  </a>
+                {% endfor %}
+              </div>
+            </div>
           </div>
-        </div>
         {% endfor %}
       </div>
-    </section>-->
+    </section>
+
   </body>
 </html>
