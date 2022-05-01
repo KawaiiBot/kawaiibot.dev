@@ -1,0 +1,34 @@
+.me .title { font-size: 4em; }
+.me .undertitle { font-size: 2em; }
+
+.move-bottom-stuff-yes { margin-bottom: 3em; }
+
+.branding-grid { margin-top: 2em; }
+
+.branding-grid img {
+  max-width: 45vmin;
+}
+
+.branding-grid video {
+  width: 100%;
+}
+
+.notice {
+  font-weight: bold;
+  font-style: italic;
+}
+
+code {
+  font-family: monospace;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 0.1em .2em;
+}
+
+.branding-grid .title {
+  font-size: 2em;
+}
+
+@media (max-width: 550px) {
+  .branding-grid img { max-width: 100%; }
+}
