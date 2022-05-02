@@ -7,5 +7,5 @@ argument = sys.argv[1] if len(sys.argv) > 1 else None
 
 build.generate(
     debug=False if argument == "build" else True,
-    URL="https://kawaiibot.dev/"
+    URL="https://kawaiibot.dev"
 )
