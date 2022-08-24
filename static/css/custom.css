@@ -32,3 +32,8 @@ code {
 @media (max-width: 550px) {
   .branding-grid img { max-width: 100%; }
 }
+
+footer {
+  margin-top: 2em;
+  margin-bottom: 0 !important;
+}
