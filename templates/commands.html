@@ -1,0 +1,28 @@
+<html>
+  <head>
+    {% set title = "KawaiiBot#0769 - Commands" %}
+    {% set desc = "All commands KawaiiBot has~" %}
+    {% include "components/_head.html" %}
+  </head>
+  <body class="dark-theme github">
+    <section class="container">
+      <h1>Command list</h1>
+      <table width="100%">
+        <thead>
+          <tr>
+            <td class="bold">Name</td>
+            <td class="bold">Description</td>
+          </tr>
+        </thead>
+        <tbody>
+          {% for name, desc in commands.items() %}
+            <tr>
+              <td>{{ name }}</td>
+              <td>{{ desc }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
