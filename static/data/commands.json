@@ -14,7 +14,6 @@
   "choose": "Picks from a list of choices. Example: choose this | that | other",
   "coffee": "Posts a random coffee image",
   "coinflip": "Flip a coin!",
-  "colour": "Preview a color! Example: /colour 00FF00 or /colour random",
   "cookie": "Give someone a cookie! 🍪",
   "cry": "sob sob ;-;",
   "cuddle": "Cuddle someone",
@@ -65,9 +64,7 @@
   "tickle": "Tickle someone",
   "urban": "Find the 'best' definition to your words",
   "user": "Get user information",
-  "value": "Converts from one currency to another",
-  "vote": "Make a vote on your server",
+  "vote": "Make a vote on your server, bot will repeat your question and add reactions",
   "wag": "Wag the tail, yes",
-  "wikipedia": "Searches wikipedia for information",
   "woop": "Woop woop!"
 }
